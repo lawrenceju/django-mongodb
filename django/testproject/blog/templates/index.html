@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="cssName.css">
+		<script src=""></script>
+		<title>test</title>
+	</head>
+	<body>
+		<h2>搜尋公司</h2>
+		<hr>
+	
+		<form action="/blog/search" method="get">  <!-- 在此網頁被GET時，自動在url部份加入/search，讓url.py可以抓到並且進入到其他網頁 -->
+			<p>
+				<label>關鍵字:</label>
+				<!-- 加入<label> 是為了可以調整『姓名：』的屬性 -->
+				
+				<input type="text" name="name" placeholder="日月光 復興航空....">
+				<!--  -->
+			</p>
+			
+				<!-- value 傳回值一定要不一樣，不然會沒辦法單選 -->
+				
+			<input type="submit" value="傳送">
+			<!-- <button><img src="C:\Users\BIG DATA\Desktop\1460267685_news.png" height="30px"></button> -->
+			<!-- 總共有4種不同的按鈕設計，最後一個可以放圖片唷唷唷!! -->
+		</form>
+
+	</body>
+<html>

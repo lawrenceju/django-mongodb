@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="">
+		<script src=""></script>
+		<title>test</title>
+	</head>
+	<style>  <!-- 放css的地方 -->
+    </style>
+	<body>
+
+		<h2>搜尋公司</h2>
+		<hr>
+	
+		<form>
+			<p>
+				<label>關鍵字:</label>
+				<!-- 加入<label> 是為了可以調整『姓名：』的屬性 -->
+				<input type="text" name="name" >
+			</p>
+			<p>你輸入的關鍵字:{{sentence}}</p>				
+			<input type="submit" value="傳送" placeholder="日月光 復興航空....">
+		</form>
+		<div>
+			<p>符合的筆數:{{num}}</p>
+			{% for post in result %} <!-- 下面要與其他標籤有indent才會生效 -->
+				<p>公司:{{post.company}}	職稱：{{post.jobname}}	薪水：{{post.salary}}</p>
+				
+			<!-- {% endfor %} -->
+		</div>
+
+	</body>
+<html>
